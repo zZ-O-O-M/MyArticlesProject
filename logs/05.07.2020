@@ -15,3 +15,11 @@
 05.07.2020 -- http://homework/index.php?c=article&id=2 -- http://homework/index.php
 05.07.2020 -- http://homework/index.php?c=article&id=25 -- 
 05.07.2020 -- http://homework/index.php -- http://homework/index.php?c=article&id=25
+05.07.2020 -- http://myarticlesproject/ -- 
+05.07.2020 -- http://myarticlesproject/index.php?c=addArticle -- http://myarticlesproject/
+05.07.2020 -- http://myarticlesproject/index.php?c=addArticle -- http://myarticlesproject/index.php?c=addArticle
+05.07.2020 -- http://myarticlesproject/index.php -- http://myarticlesproject/index.php?c=addArticle
+05.07.2020 -- http://myarticlesproject/index.php?c=logs -- http://myarticlesproject/index.php
+05.07.2020 -- http://myarticlesproject/index.php?c=log&fileName=05.07.2020 -- http://myarticlesproject/index.php?c=logs
+05.07.2020 -- http://myarticlesproject/index.php?c=logs -- http://myarticlesproject/index.php?c=log&fileName=05.07.2020
+05.07.2020 -- http://myarticlesproject/index.php -- http://myarticlesproject/index.php?c=logs

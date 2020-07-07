@@ -15,6 +15,12 @@
     <? endif; ?>
 	<br>
 	<br>
+	<select name="cat_id" id="category">
+		<option value="<?= $art['cat_id'] ?>"><?= $art['cat_name'] ?></option>
+      <? foreach ($allCategories as $category): ?>
+				<option value="<?= $category['cat_id'] ?>"><?= $category['cat_name'] ?></option>
+      <? endforeach; ?>
+	</select>
 
 	<input type="submit" value="Change article">
 	<br>

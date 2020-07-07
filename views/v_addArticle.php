@@ -15,6 +15,13 @@
     <? endif; ?>
 	<br>
 	<br>
+	<select name="cat_id" id="category">
+      <? foreach ($allCategories as $category): ?>
+				<option value="<?= $category['cat_id'] ?>"><?= $category['cat_name'] ?></option>
+      <? endforeach; ?>
+	</select>
+	<br>
+	<br>
 
 	<input type="submit" value="add article">
 	<br>
