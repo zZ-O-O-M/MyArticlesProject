@@ -7,6 +7,12 @@ function getAllArticles() {
     return $res->fetchAll();
 }
 
+function getAllArticlesByExactlyCat(int $cat_id) {
+    $res = dbQuery('SELECT * FROM articles JOIN category ON articles.cat_id=category.cat_id 
+        WHERE articles.cat_id =:cat_id  ORDER BY dt_add', ['cat_id' => $cat_id]);
+    return $res->fetchAll();
+}
+
 function getOneArticle(int $id) {
 //    SELECT * FROM `products` JOIN category ON products.id_cat = category.id_cat
     $res = dbQuery('SELECT * FROM articles JOIN category ON articles.cat_id=category.cat_id WHERE articles.id=:id',
